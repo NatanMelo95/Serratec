@@ -1,0 +1,34 @@
+1) Bloco de comandos é um conjunto de instruções, em algumas linguagens há palavras reservadas para delimitar o bloco, como por exemplo begin e end
+
+2) É uma estrutuda de desvio de fluxo de controle que realiza um conjunto de comandos predeterminados de forma sequencial
+
+3) O simbolo utilizado no encerramento de uma instrução é o ponto e virgula (;), porém algumas linguagens dispensam o uso deste
+
+4) Para exibir uma mensagem na tela com JavaSxript utilizamos document.write
+
+5) Deve-se verificar a extensão do arquivo se foi colocado corretamente e se o arquivo foi salvo antes de executar, pois o mesmo só acata as alterações se estiver salvo, o vscode deixa o arquivo com uma bolinha branca na aba para mostrar que este não está salvo
+
+6) A alteração quanto ao tipo de caracter pode vir a alterar a forma como é interpretada a palavra reservada, fazendo com que o sistema não seja compilado por erro de variável não declarada
+
+7) console.log escreve a informação apenas no console (ferramenta de desenvolvedor) sendo geralmente utilizado para teste de funcionalidade do código, já o document.write escreve na tela do usuário e não no console
+
+8) \n
+
+9
+a) Ctrl + S
+
+b) Ctrl + Alt + N
+
+c) Alt + Shift + UP/DOWN 
+
+d) Ctrl + Alt + UP/DOWN
+
+e) Ctrl + Shift + P
+
+f) Ctrl + T Ctrl + U
+
+g) Alt + Z
+
+10) A indentação indica a qual bloco de comando pertence os comando indentados, algumas linguagens de programação só interpretam corretamente o código caso este esteja indentado
+
+11) Caso o cliente/usuário acesse as ferramentas de desenvolvedor no navegador, o mesmo poderá ver o código caso este esteja no HTML, porém se este estiver em arquivo separado será ocultado do usuário, assim protegendo a integridade da aplicaçãoö

@@ -1,0 +1,1 @@
+console.log('Não acredito que ele duvidou,'+' concatenando as strings,'+' posso imprimir com só um console.log')

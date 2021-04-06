@@ -1,0 +1,37 @@
+1) A variável não tem um valor definida antes de sua primeira atribuição
+
+2) Podemos atribuir um valor inteiro a uma variavel real, porém não é possível fazer o inverso
+
+3) Valor, expressão, outra variável, retorno de função, implícita, ou indireta
+
+4) 
+a) ;
+
+b) .
+
+c) ,
+
+d) /
+
+e) %
+
+f) { }
+
+5) Podemos controlar a ordem de execução dos operadores utilizando separação por parenteses "( )"
+
+6) O resultado é mais importante, não é possível fazer expressões com tipos diferentes do resultado
+
+7) Unária é composta por apenas um elemento e o simbolo/sinal da operação, binária contém dois elementos e o operador entre eles
+
+8) É o mesmo que debugar o código porém ao invés de feito por software é feito manualmente 
+
+9) Podemo visualizar em Executar e Depurar >> variaveis
+
+Desafio
+par de sapatos = 10
+homem com apito = 5
+par de apitos = 4
+homem sem apito = 3
+apito = 2
+sapato = 5
+reslutado = 11

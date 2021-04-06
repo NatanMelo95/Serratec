@@ -1,0 +1,8 @@
+console.log('\t\t\t\t\tTeresópois, 23 de Março de 2021\n')
+console.log('\tOlá')
+console.log('\tComo foi essa jornada?\n')
+console.log('\tEspero que tenha sido boa.'+'Antes de iniciar estava cansado e frustrado por sempre ter dificuldade para encerrar projetos web, mas agora acredito que não seja mais um problema não é mesmo?')
+console.log('\tEstava sem grana sem vontade nem mesmo de fazer um exercício pra melhorar a saúde, mas agora é diferente.'+'emprego novo, vai na academia, conseguiu até mesmo perder uns quilinhos. rsrsrs')
+console.log('\tObrigado por ter entrago nessa jornada, ela foi o ponta pé inicial, agora vamos concluir a graduação e o céu é o limite.'+' Vai lá o mundo é seu, crie e ajude a fazer um novo futuro a cada dia melhor.')
+console.log('\nNatan Melo')
+console.log('Full-Stack Developer')
