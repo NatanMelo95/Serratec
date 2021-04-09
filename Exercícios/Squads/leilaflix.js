@@ -16,7 +16,7 @@ let filme = Number(ler("Entre esses filmes de terror 1) Train to Busan e 2) A Qu
             mensagem = "Recomendação: His House (81%): este filme foi aclamado pela crítica!"
         break;
     }
-    console.log(mensagem)
+    console.log(mensagem);
 }
 
 if (flix == "Drama"){
