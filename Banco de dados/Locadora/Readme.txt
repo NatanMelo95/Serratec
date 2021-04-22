@@ -1,4 +1,4 @@
-Grupos
+Grupo
 
 Natan Melo de Oliveira
 Gustavo de Almeida Machado Trigo
