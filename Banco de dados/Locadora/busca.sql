@@ -36,7 +36,7 @@ SELECT
 FROM filme
 JOIN categoria ON filme.id_categoria = categoria.id
 
-Ou
+--Ou
 
 SELECT 
 	filme.nome AS filme,
