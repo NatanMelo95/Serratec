@@ -1,5 +1,4 @@
-package model.cliente;
+package main.java.br.com.wrsolucoes.bancodigital.model.cliente;
+public class Cliente {
 
-public class Cliente{
-    
 }

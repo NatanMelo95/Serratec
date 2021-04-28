@@ -1,0 +1,52 @@
+Quando vamos criar o projeto temos que ter em mente algumas coisas:
+1° Qual o nome do projeto
+2° Qual o nome do dominio da empresa que eu estou criando.
+
+Todos os pacotes ou projetos são separados por dominios invertidos.
+
+Exemplo de um dominio: wrsolucoes.com.br/bancodigital
+
+br.com.wrsolucoes.bancodigital
+
+===============//===============
+
+
+O professor ficou muito curioso com o mercado financeiro e resolveu investir em 
+um projeto para criação de um novo banco digital.
+
+Esse banco digital poderá ter até 4 tipos de contas.
+
+Contas que vão existir no banco digital:
+1° Conta Poupança
+2° Conta Corrente
+3° Conta investimento
+4° Conta Salario.
+
+Regras:
+
+Todas as contas vão ter:
+    agencia
+    numero da conta.
+    digito da conta.
+    saldo da conta.
+
+opções para: 
+    sacar
+    depositar
+    transferir (obs: Só a conta salario que não deve ter essa opção.)
+    imprimirExtrato
+
+Tem que ter o cliente:
+Cada cliente de inicio só pode ter uma conta.
+Cliente:
+nome, cpfOuCnpj, email, celular, rg, Endereco(cep, rua, numero, bairro, cidade, estado)
+
+
+Cada conta deve ter sua forma distinta de imprimirExtrato.
+
+A conta investimento deve ter uma opção de investir com a seguinte regra:
+1° 0 a 1000 = 2%
+2° 1001 a 5000 = 2,5%
+3° 5001 a 10000 = 3%
+4° 10001 a 20000 = 4%
+5° Acima de 20000 = 5%
