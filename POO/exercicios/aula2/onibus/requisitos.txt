@@ -1,0 +1,12 @@
+Criar um projeto novo.
+Criar uma classe Pessoa
+Criar uma classe Passageiro
+Criar uma classe Motorista
+Criar uma classe endereco para ser generica para todos.
+
+todo passageiuro e motorista é do tipo pessoa.
+Todos eles tem os atributos nome, idade, sexo.
+Todos tem o metodo cumprimentar();
+
+Regras: Criar como pacotes.
+Separar e organizar tudo corretamente.
