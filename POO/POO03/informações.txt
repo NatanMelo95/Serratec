@@ -34,7 +34,7 @@ opções para:
     sacar
     depositar
     transferir (obs: Só a conta salario que não deve ter essa opção.)
-    imprimirExtrato
+    imprimirExtrato (Cada conta deve ter sua forma distinta de imprimirExtrato.)
 
 Tem que ter o cliente:
 Cada cliente de inicio só pode ter uma conta.
@@ -42,7 +42,7 @@ Cliente:
 nome, cpfOuCnpj, email, celular, rg, Endereco(cep, rua, numero, bairro, cidade, estado)
 
 
-Cada conta deve ter sua forma distinta de imprimirExtrato.
+
 
 A conta investimento deve ter uma opção de investir com a seguinte regra:
 1° 0 a 1000 = 2%
@@ -50,3 +50,36 @@ A conta investimento deve ter uma opção de investir com a seguinte regra:
 3° 5001 a 10000 = 3%
 4° 10001 a 20000 = 4%
 5° Acima de 20000 = 5%
+
+Algumas Boas praticas em java
+
+1° public vai sempre anteceder metodos. todos os atributos serem privados ou protegidos.
+2° Criar construtores para ja inicializar o objeto com suas informações prioritárias.
+
+
+================//=================
+
+Criar um projeto semelhante ao do banco digital para qualquer tipo de empresa.
+1° atentar a estrutura de pastas.
+2° a criação das classes com suas boas praticas.
+
+3° Criar uma classe Passageiro
+    3.1 nome, idade, telefone
+    3.2 Criar 3 construtores diferentes
+
+4° Criar uma classe para Motorista
+    4.1 nome, idade, telefone, tipoDeHabilitacao
+    4.2 Criar 3 construtores diferentes
+
+5° Criar as region nas classes
+
+6° Criar um exemplo no app de utilização dessas classes.
+
+Excepetions
+
+
+Movimentação
+
+Data e hora - Tipo  - Valor 250.0
+
+29/04/2021 13:46:55
