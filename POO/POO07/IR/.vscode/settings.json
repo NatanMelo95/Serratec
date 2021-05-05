@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "main/java/br/com/meuir/ir",
+        "src/main/java/br/com/meuir/ir"
+    ]
+}
