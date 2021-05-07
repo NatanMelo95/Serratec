@@ -5,11 +5,12 @@ import model.funcionario.Funcionario;
 
 public class App {
     public static void main(String[] args) {
-        ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
+        ArrayList<Funcionario> funcionario;
         String novo;
         int op, i;
         //#region Scanner  
         var scanner = new Scanner(System.in);
+        funcionario = new ArrayList<Funcionario>();
         do{
             System.out.println("O que deseja fazer? \n1 - cadastrar novo funcionário \n2 - Obter calculo de IRRF \n0 - sair");
             op = scanner.nextInt();
@@ -31,6 +32,7 @@ public class App {
                         System.out.println("Deseja cadastrar mais algum usuário? (S/N)");
                         novo = scanner.next();
                     }while(novo == "S");
+                    break;
                     ////#endregion
                 case 2:
                     if (funcionario.size() > 0) {
