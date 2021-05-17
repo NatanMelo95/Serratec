@@ -2,7 +2,8 @@ package main.java.br.com.nmanutencoes.model.itens;
 
 public class Product {
     //#region Variaveis
-    private String code;
+    private int code;
+    private String name;
     private String description;
     private Category category;
     private int amount;
@@ -11,13 +12,14 @@ public class Product {
     //#endregion
 
     //#region Constructos
-    public Product(String code, String description, Category category, int amount, Double value, Double discount) {
+    public Product(int code, String name, String description, Category category, int amount, Double value) {
         this.code = code;
+        this.name = name;
         this.description = description;
         this.category = category;
         this.amount = amount;
         this.value = value;
-        this.discount = discount;
+        this.discount = 0.00;
     }
     //#endregion
 
@@ -70,5 +72,14 @@ public class Product {
     public void setDiscount(Double discount) {
         this.discount = discount;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     //#endregion
 }
