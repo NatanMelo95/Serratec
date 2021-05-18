@@ -49,39 +49,45 @@ public class Enterprise {
     //#endregion
 
     //#region methods
-    public void PrintDemand(int i){
+    public void PrintDemand(String cli){
         int j;
-        System.out.println(""); 
-        System.out.println("***************************************************************");  
-        System.out.println("*********************** "+ this.name +" ***********************");  
-        System.out.println("***************************************************************");  
-        System.out.println(""); 
+        for (i=0; i<this.demand().size();i++){
+            if(cli.equals(this.getDemand().getClient().getName())){
+                System.out.println(""); 
+                System.out.println("***************************************************************");  
+                System.out.println("*********************** "+ this.name +" ***********************");  
+                System.out.println("***************************************************************");  
+                System.out.println(""); 
 
-        var dataEHora = Data.formatarDataPadraoDataEHora(new Date());
-        System.out.println("Data e hora da geração: " + dataEHora);
-        System.out.println("");
-        System.out.println("Cliente");
-        System.out.println("");
-        System.out.println("_______________________________________________________________");
-        System.out.println("Nome: " + this.demand.get(i).getClient().getName());
-        System.out.println("Rua: " + this.demand.get(i).getClient().getAdress().getStreet()+", "+ this.demand.get(i).getClient().getAdress().getNumber()+", Bairro: "+this.demand.get(i).getClient().getAdress().getDistrict());
-        System.out.println("Referencia: " + this.demand.get(i).getClient().getAdress().getReference());
-        System.out.println("");
-        System.out.println("_______________________________________________________________");
-        System.out.println("");
-        System.out.println("Código    Nome     Quantidade    Valor Unitário     Valor total");
+                var dataEHora = Data.formatarDataPadraoDataEHora(new Date());
+                System.out.println("Data e hora da geração: " + dataEHora);
+                System.out.println("");
+                System.out.println("Cliente");
+                System.out.println("");
+                System.out.println("_______________________________________________________________");
+                System.out.println("Nome: " + this.demand.get(i).getClient().getName());
+                System.out.println("Rua: " + this.demand.get(i).getClient().getAdress().getStreet()+", "+ this.demand.get(i).getClient().getAdress().getNumber()+", Bairro: "+this.demand.get(i).getClient().getAdress().getDistrict());
+                System.out.println("Referencia: " + this.demand.get(i).getClient().getAdress().getReference());
+                System.out.println("");
+                System.out.println("_______________________________________________________________");
+                System.out.println("");
+                System.out.println("Código    Nome     Quantidade    Valor Unitário     Valor total");
 
-        for (j=0;j<this.demand.get(i).getProduct().size();j++) {
-            System.out.println(demand.get(i).FormatDemand(j));
-        }
-        System.out.println("");
-        System.out.println("_______________________________________________________________");
-        System.out.println(demand.get(i).FormatShipping());
-        System.out.println("Desconto R$ " + demand.get(i).CalcDemandDiscount());
-        System.out.println("Valor Total R$ " + demand.get(i).CalcDemand());
-        System.out.println("***************************************************************");
-        System.out.println("***************************************************************");    
-        System.out.println(""); 
+                for (j=0;j<this.demand.get(i).getProduct().size();j++) {
+                    System.out.println(demand.get(i).FormatDemand(j));
+                }
+                System.out.println("");
+                System.out.println("_______________________________________________________________");
+                System.out.println(demand.get(i).FormatShipping());
+                System.out.println("Desconto R$ " + demand.get(i).CalcDemandDiscount());
+                System.out.println("Valor Total R$ " + demand.get(i).CalcDemand());
+                System.out.println("***************************************************************");
+                System.out.println("***************************************************************");    
+                System.out.println("");
+            }else{
+                System.out.println("Pedido não encontrado");
+            }
+        } 
     }
     public String DateInterval(Date begin, Date end){
         int j;
