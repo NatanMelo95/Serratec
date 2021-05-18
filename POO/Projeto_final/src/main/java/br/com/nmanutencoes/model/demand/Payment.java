@@ -1,4 +1,4 @@
-package main.java.br.com.nmanutencoes.model.orders;
+package main.java.br.com.nmanutencoes.model.demand;
 
 public enum Payment {
     CREDITCARD("Cartão de crédito"),

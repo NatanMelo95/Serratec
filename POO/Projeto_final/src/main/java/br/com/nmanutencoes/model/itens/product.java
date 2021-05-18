@@ -12,7 +12,11 @@ public class Product {
     //#endregion
 
     //#region Constructos
-    public Product(int code, String name, String description, Category category, int amount, Double value) {
+
+    public Product() {
+    }
+
+    public Product(int code, String name, String description, Category category, Double value, int amount) {
         this.code = code;
         this.name = name;
         this.description = description;
@@ -25,11 +29,20 @@ public class Product {
 
     //#region GETs & SETs
 
-    public String getCode() {
+    public Product(int code, String description, Category category, Double value, Double discount, int amount) {
+        this.code = code;
+        this.description = description;
+        this.category = category;
+        this.amount = amount;
+        this.value = value;
+        this.discount = discount;
+    }
+
+    public int getCode() {
         return this.code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 

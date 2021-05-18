@@ -1,9 +1,10 @@
-package main.java.br.com.nmanutencoes.model.orders;
+package main.java.br.com.nmanutencoes.model.demand;
 
 import java.util.ArrayList;
 import java.util.Date;
 
 import main.java.br.com.nmanutencoes.model.clients.Client;
+import main.java.br.com.nmanutencoes.model.itens.Category;
 import main.java.br.com.nmanutencoes.model.itens.Product;
 
 public class Demand {
@@ -20,9 +21,9 @@ public class Demand {
     //#endregion
 
     //#region Constructors
-    public Demand(int idOrder, Date date, Client client, Double shipping, Double discount, Payment payment) {
+    public Demand(int idOrder, Client client, Double shipping, Double discount, Payment payment) {
         this.idOrder = idOrder;
-        this.date = date;
+        this.date = new Date();
         this.product = new ArrayList<Product>();
         this.client = client;
         this.shipping = shipping;
@@ -49,11 +50,11 @@ public class Demand {
         this.date = date;
     }
 
-    public Product getProduct() {
+    public ArrayList<Product> getProduct() {
         return this.product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(ArrayList<Product> product) {
         this.product = product;
     }
 
@@ -99,44 +100,51 @@ public class Demand {
     //#endregion
 
     //#region Methods
-    public void AddProduct(String product, int amount){
+    public void AddProduct(String nm, int amount){
+        int i;
         for (i=0;i<product.size();i++) {
-            if(nm.equals(product.get(i).getNome())){
-                if (this.payment != CREDITCARD) {
+            if(nm.equals(product.get(i).getName())){
+                if (this.payment != Payment.CREDITCARD) {
                     discount = 0.05;
                 }else{
                     discount = 0.00;
                 }
-                this.product.add(new Product(Product.getCode(), Product.getDescription(), Product.getCategory(), Product.getValue(), discount, amount));
-                this.totalValue += Product.getValue();
+                this.product.add(new Product(product.get(i).getCode(), product.get(i).getDescription(), product.get(i).getCategory(), product.get(i).getValue(), discount, amount));
+                this.totalValue += product.get(i).getValue();
             }
         }
     }
-    private Double CalcDemand(){
-        for(i=0;product.size();i++){
-            this.discount += this.product[i].discount;
+    public Double CalcDemand(){
+        int i;
+        for(i=0;i<product.size();i++){
+            this.discount += this.product.get(i).getDiscount();
         }
         this.discount = this.discount/this.product.size();
-        this.totalValueDis = this.totalValue - (this.value*this.discount);
+        this.totalValueDis = this.totalValue - (this.totalValue*this.discount);
         return this.totalValueDis;
     }
-    private Double CalcDemandDiscount(){
-        for(i=0;product.size();i++){
-            this.discount += this.product[i].discount;
+    public Double CalcDemandDiscount(){
+        int i;
+        for(i=0;i<product.size();i++){
+            this.discount += this.product.get(i).getDiscount();
         }
         this.discount = this.discount/this.product.size();
         return this.discount;
     }
-    public String FormatDemand(){
-        var total = this.product.getAmount()*this.product.getValue();
-        return String.format("%d    %s     %d    R$%.2f     R$%.2f", this.product.getCode(), this.product.getName(), this.product.getAmount(), this.product.getValue(), total);
+    public String FormatDemand(int i){
+        var total = this.product.get(i).getAmount()*this.product.get(i).getValue();
+        return String.format("%d    %s     %d    R$%.2f     R$%.2f", this.product.get(i).getCode(), this.product.get(i).getName(), this.product.get(i).getAmount(), this.product.get(i).getValue(), total);
     }
     public String FormatShipping(){
-        Double shipping;
-        if (this.product.category == FREESHIPPING){
-            shipping = 0.00;
-        }else{
-            shipping = 50.00;
+        Double shipping =0.00;
+        int i;
+        for(i=0;i<product.size();i++){
+            if (this.product.get(i).getCategory() == Category.FREESHIPPING){
+                shipping = 0.00;
+            }else{
+                shipping = 50.00;
+                break;
+            }
         }
         return String.format("Frete:     R$%.2f", shipping);
     }
