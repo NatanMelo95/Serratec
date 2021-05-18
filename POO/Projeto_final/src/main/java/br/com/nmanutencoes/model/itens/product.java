@@ -25,10 +25,6 @@ public class Product {
         this.value = value;
         this.discount = 0.00;
     }
-    //#endregion
-
-    //#region GETs & SETs
-
     public Product(int code, String description, Category category, Double value, Double discount, int amount) {
         this.code = code;
         this.description = description;
@@ -36,6 +32,13 @@ public class Product {
         this.amount = amount;
         this.value = value;
         this.discount = discount;
+    }
+    //#endregion
+
+    //#region GETs & SETs
+
+
+    public Product(int code2, String nome, String description2, Category category2, int amount2, Double value2) {
     }
 
     public int getCode() {

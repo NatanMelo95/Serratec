@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import main.java.br.com.nmanutencoes.model.clients.Adress;
+import main.java.br.com.nmanutencoes.model.clients.Client;
 import main.java.br.com.nmanutencoes.model.demand.Demand;
 import main.java.br.com.nmanutencoes.model.demand.Payment;
 import main.java.br.com.nmanutencoes.util.Data;
@@ -46,13 +47,16 @@ public class Enterprise {
     public void setDemand(ArrayList<Demand> demand) {
         this.demand = demand;
     }
+    public void setDemand(int idOrder, Client client, Payment payment) {
+        
+    }
     //#endregion
 
     //#region methods
     public void PrintDemand(String cli){
-        int j;
-        for (i=0; i<this.demand().size();i++){
-            if(cli.equals(this.getDemand().getClient().getName())){
+        int j, i;
+        for (i=0; i<this.demand.size();i++){
+            if(cli.equals(this.demand.get(i).getClient().getName())){
                 System.out.println(""); 
                 System.out.println("***************************************************************");  
                 System.out.println("*********************** "+ this.name +" ***********************");  
@@ -213,4 +217,5 @@ public class Enterprise {
         System.out.println(formatCre);
     }
     //#endregion
+    
 }
