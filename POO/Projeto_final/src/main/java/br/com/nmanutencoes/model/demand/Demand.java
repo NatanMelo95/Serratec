@@ -97,6 +97,14 @@ public class Demand {
     public void setTotalValue(Double totalValue) {
         this.totalValue = totalValue;
     }
+
+    public Double getTotalValueDis() {
+        return this.totalValueDis;
+    }
+
+    public void setTotalValueDis(Double totalValueDis) {
+        this.totalValueDis = totalValueDis;
+    }
     //#endregion
 
     //#region Methods
@@ -131,7 +139,6 @@ public class Demand {
             }else{
                 discount = 0.00;
             }
-            this.discount += discount;
         }
         this.discount = this.discount/this.product.size();
         return this.discount;

@@ -99,7 +99,7 @@ public class Enterprise {
         }
         return String.format("Seu saldo no período é: %.2f", interval);
     }
-    public void mostPayment(){
+    public void MostPayment(){
         int i;
         var pi = 0;
         var cc = 0;
@@ -180,6 +180,37 @@ public class Enterprise {
                 }
             }
         }
+    }
+    public void MostPaymentValue(){
+        int i;
+        var pi = 0;
+        var cc = 0;
+        var dc = 0;
+        var bo = 0;
+        var pp = 0;
+        for(i=0;i<this.demand.size();i++){
+            if (this.demand.get(i).getPayment().equals(Payment.PIX)) {
+                pi+=this.demand.get(i).getTotalValueDis();
+            }else if (this.demand.get(i).getPayment().equals(Payment.CREDITCARD)){
+                cc+=this.demand.get(i).getTotalValueDis();
+            }else if (this.demand.get(i).getPayment().equals(Payment.DEBITCARD)){
+                dc+=this.demand.get(i).getTotalValueDis();
+            }else if (this.demand.get(i).getPayment().equals(Payment.TICKET)){
+                bo+=this.demand.get(i).getTotalValueDis();
+            }else{
+                pp+=this.demand.get(i).getTotalValueDis();
+            }
+        }
+        String formatPix = String.format("O valor total no Pix é %.2f", pi);
+        String formatTic = String.format("O valor total no Boleto é %.2f", bo);
+        String formatPic = String.format("O valor total no PicPay é %.2f", pp);
+        String formatDeb = String.format("O valor total no Debito é %.2f", dc);
+        String formatCre = String.format("O valor total no Crédito é %.2f", cc);
+        System.out.println(formatPix);
+        System.out.println(formatTic);
+        System.out.println(formatPic);
+        System.out.println(formatDeb);
+        System.out.println(formatCre);
     }
     //#endregion
 }
