@@ -5,3 +5,9 @@ body{
 figure{
     text-align: center;
 }
+h1{
+    background-image: url("../../img/sobre-background.jpg");
+}
+h2{
+    border-bottom: 2px solid #333;
+}
