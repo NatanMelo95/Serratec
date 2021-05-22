@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+    line-height: 1;
+    background-image: url("../../midia/img/fundo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    background: rgba(255,255,255,0.92);
+    padding: 15px;
+    padding-bottom: 25px;
+    margin: 20px;
+}
+.wpp-floating {
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+    z-index: 60;
+    transition: 2s;}
+    @media only screen and (max-width: 993px) {
+        .wpp-floating {
+        right: 2rem;
+        width: 10%;
+        bottom: 5rem;} }
+.wpp-floating:hover {
+    position: fixed;
+    bottom: 4.3rem;
+    right: 2rem;
+    z-index: 60;
+    ;}
+#complementares{
+    display: inline;
+}
+#foto{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 15px;
+    transition: 2s;
+}
+#foto:hover{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 15px;
+}
+#adicionais{
+    padding-bottom: 30px;
+}
+a{
+    text-decoration: none;
+}
+ul div h3{
+    display: inline;
+}
+button{
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: yellowgreen;
+}

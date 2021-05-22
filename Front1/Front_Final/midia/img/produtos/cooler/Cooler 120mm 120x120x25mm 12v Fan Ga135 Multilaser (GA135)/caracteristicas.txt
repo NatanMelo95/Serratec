@@ -1,0 +1,25 @@
+R$38,16
+
+Características:
+- Marca: Multilaser
+- Modelo: GA135
+
+Especificações:
+Características:
+- Dimensão do Fan: 120 x 120 x 25 cm
+- Velocidade do fan: 1300 RPM+/-10%
+- Cor do Led: vermelho
+
+Informações técnicas:
+- Voltagem: 12DVC
+- Corrente Nominal: 0,15A (máximo 0,18A)
+- Tipo de rolamento: HB (Hydraulic-Bearing)
+- Conector: 3 pinos
+- PIN1: ?o negativo transparente (-)
+- PIN2: ?o positivo ransparente (+)
+- PIN3: ?o de frequência transparente (FG)
+- Fio condutor: UL 1007 26AWG POINTS
+- Nível de ruído: 27.3(MAX. 30.5)dB-A
+
+Garantia:
+3 Meses 

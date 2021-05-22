@@ -1,0 +1,41 @@
+Marca
+EVGA
+
+Modelo
+02G-P3-2732-KR
+
+Formato
+Low Profile
+
+Interface
+PCI Express 2.0
+
+Chipset
+NVIDIA
+
+GPU
+GeForce GT 730
+
+Core Clock
+700MHz
+
+CUDA Cores
+96
+
+Clock da memoria
+1400MHz
+
+Tamanho da memoria
+2GB
+
+Interface da memoria
+128-Bit
+
+Tipo de memoria
+DDR3
+
+HDMI
+1 x HDMI
+
+DVI
+1 x DVI-I
