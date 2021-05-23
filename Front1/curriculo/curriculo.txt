@@ -1,0 +1,113 @@
+Arquivo HTML
+
+DOCTYPE -> Para indicar o tipo/versão do arquivo neste caso HTML 5
+
+html lang -> Para indicar o idioma no qual está (utilizado pelo google para busca)
+
+head -> Emcapsulamento para padrão de caracter, compatibilidade, escala da pagina, estilização de página e título
+
+meta -> Informa padrão de caracter, compatibilidade, escala da pagina e estilização de página
+
+link -> Informa localização dos arquivos de estilo da página
+
+title -> Titulo da página
+
+body -> Corpo do site (tudo que será exibido)
+
+div -> Delimita um bloco de conteúdo no body
+
+class -> Indica a classe no arquivo de estilo ou código para o bloco (div) ou tag (pode ser utilizado em mais de uma tag)
+(classe no arquivo de estilo é indicada por . (ponto) antes do nome)
+
+section -> Indica uma seção na pagina semelhante ao div
+
+class row e col -> Indica quando usado bootstrap que os blocas com as classes ocuparam um tamanho determinado na página sendo row indicando um bloco e col um sub bloco podendo assim colocar mais de um bloco em mesma linha row divide a linha em 12 colunas (muito usado para responsividade)
+
+h1 -> Indica um titulo dentro da página
+
+h2 -> Indica um subtitulo dentro da página
+
+ul -> Indica uma lista não numerada/ordenada
+
+li -> Indica os itens de uma lista sejá ela numerada/ordenada ou não
+
+a -> Ancora - Indica setor da pagina para acesso mais rapido ou link externo
+
+img -> Indica imagem a ser inserida 
+
+src -> Indica caminho da imagem a ser inserida
+
+id -> Indica a identifição da tag no arquivo de estilo ou código (pode ser usado apenas por uma tag)
+(id no arquivo de estilo é identificado por #)
+
+p -> Informa que será exibido um paragrafo
+
+span -> Semelhante ao div, porém é um elemento em linha
+
+style -> Indica um estilo dentro do html
+
+button -> Botão na página (utilizado para interação bvasica com o usuário)
+
+footer -> Rodapé da pagina
+
+script -> Indica bloco de comandos a serem executados na página
+
+--------------------------------------------------------------------------------------
+
+Arquivo CSS
+
+font-family -> Indica a fonte a ser utilizada na página
+
+background-image -> indica imagem a ser inserida por estilo no fundo da pagina
+
+url -> Indica caminho da imagem a ser inserida
+
+background-repeat -> india repetição da imagem inseridad e fundo
+
+background-size -> indica tamanho da imagem do fundo do bloco
+
+background -> identifica fundo do bloco
+
+rgba -> Indica cor e opacidade
+
+padding -> Indica espaçamento interno do bloco (para todos os lados)
+
+padding-bottom -> Indica espaçamento interno do bloco (para parte inferior da pagina)
+
+margin -> Indica espaçamento externo do bloco (para todos os lados)
+
+position -> Indica posicionamento do bloco (pode ser fixo ou não)
+
+bottom -> Posição em relação ao final da pagina
+
+right -> Posição em relação a direita da pagina
+
+z-index -> Posição em relação ao eixo z da pagina (colocando a frente ou atrás de outro componente)
+
+@media -> Para quando acessado em plataforma com resolução diferente da padrão
+
+display -> Indica como será organizada a vizualização do bloco
+
+max-width -> Indica largura maxima
+
+max-height -> Indica altura maxima
+
+transition -> Indica tempo de transição do componente
+
+hover -> estilo quando mouse sobrepoe o componente
+
+text-decoration -> decoração do texto
+
+border -> tipo de borda
+
+border-radius -> raio da borda do componente
+
+. -> Identifica classe
+
+# -> Identifica id
+
+------------------------------------------------------------------------------
+
+Arquivo JS
+
+Indica uma alteração ou algo que deve ser executado dependendo da interação do usuário com a página
