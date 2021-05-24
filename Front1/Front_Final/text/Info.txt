@@ -1,0 +1,4 @@
+-botar nos cabeçalhos para eles direcionarem a home
+-descobrir se o everton tterminou o sobre e faz alguns detalhes
+- discutir apresentação
+-clicar no item e aparecer o alert

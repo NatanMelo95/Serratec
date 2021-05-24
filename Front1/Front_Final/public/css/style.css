@@ -4,7 +4,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.navbar{
+
+/* Alterações feitas da navibar original */
+
+/* #navbar{
     display: flex;
     background-color: rgba(138,43,226,0.5);
     width: cover;
@@ -12,34 +15,85 @@ body{
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+} */
+
+.navbar img{
+    width: 50px;
+    position: relative;
+    top: -16px;    
 }
+
+.nav-logo  {
+    position: relative;
+    top: -160;
+    font-size: 30px;
+    color: #5e5573;
+    font-weight: 600;    
+}
+
 #btn{
-    display: flex;
+    display: grid;
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
     justify-content: center;
 }
 #btn button{
-    background-color: purple;
+    background-color: #e5e5e5;
     margin-left: 22px;
     margin-right: 22px;
     height: 40px;
     width: 140px;
 }
-#container{
-    margin-top: 130px;
-}
+
 .item{
     width: 250px;
     height: 300px;
 }
 .footer{
+    
     display: flex;
-    background-color: rgba(138,43,226,0.5);
-    width: cover;
+    position:fixed;
+    bottom: 0;
+    color: #5e5573;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: #f6f7fc;
+    width: 100%;
     height: 100px;
     margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+.footer a, footer h4 {
+    color: #5e5573;
+    font-weight: 600;
+
+}
+
+.img-footer{
+    margin-left: 60px;
+    width: 60px;        
+    height: 60px;
+}
+
+.footer .sobre {
+    margin-left:20px;
+    font-size: 20px;
+}
+
+.footer .contato {
+    display: flex;
+    position:absolute;
+    right: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Sobre */
+
+#sobre {
+    width: 80%;
+    margin: auto;
+}
+

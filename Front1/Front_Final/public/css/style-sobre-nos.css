@@ -1,0 +1,50 @@
+body{
+    background-color: rgba(10,23,55,0.5);
+    background-image: url(../../midia/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar img{
+    width: 50px;
+    position: relative;
+    top: -16px;    
+}
+
+.nav-logo  {
+    font-size: 30px;
+    color: #5e5573;
+    font-weight: 600;    
+}
+
+.navbar{
+    display: flex;
+    background-color: rgba(138,43,226,0.5);
+    width: cover;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 130px;
+}
+
+.item{
+    width: 250px;
+    height: 300px;
+}
+.footer{
+    display: flex;
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.img-footer{
+    width: 70px;
+        
+    height: 70px;
+}

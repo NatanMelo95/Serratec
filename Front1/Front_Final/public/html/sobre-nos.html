@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../midia/img/logo.png" type="image/x-icon">
+    <link rel="icon" href="../../midia/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Sobre nós</title>
+    
+</head>
+
+<body>
+    <!-- Inicio Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./home.html"><img src="../../midia/img/logo.png"  alt=""></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html"><span class="nav-logo">HardTech</span></a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Sua busca aqui">
+            </div>
+            <button id="btn-login" type="button" class="btn btn-default" data-toggle="modal" data-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#cadastrarModal">Cadastre-se</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </div>
+  </nav>
+
+
+  
+  <!-- Fim Navbar -->
+  <div class="container1">
+    <div id="btn">
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <a href="./pecas-pc.html"><button>Monte seu PC</button></a>
+        </div>
+        <div class="col-4">
+          <a href="./pc-montado.html"><button>PCs montados</button></a>
+        </div>
+        <!-- <div class="col-4">
+          <a href="./carrinho.html"><button>btn3</button></a>
+        </div>-->
+    </div>
+  </div>
+    <div id=sobre>
+        <h2>A HardTech:</h2>
+        <p>
+            Somos uma empresa de tecnologia fundada em meados de 2021, extamente na época de uma das maiores
+            trágedias mundias (covid-19) e também de uma revolução tecnológica e no modo de se
+            viver e trabalhar. E nós da HARDTECH estamos para trazer felicidade e seguranaça para
+            nossos clientes nesse momento tão díficil!
+        </p>
+        <h3>FIQUE EM CASA!</h3>
+        
+        <h2>The HardTech</h2>
+        <p>
+            We are a companywe are a technology company founded in the middle of 2021, exactly at the time of one of the
+            largest
+            world tragedies (covid-19) and also of a technological revolution and in the way of
+            live and work. And we at HARDTECH are here to bring happiness and security to
+            our customers in such a difficult time!
+        </p>
+        
+        <p>Fundadores/Founders:</p>
+        <ul>
+            <li>Alice Periles Machado</li>
+            <li>Everton Da Silva Macedo</li>
+            <li>Jéssica Sampaio Pereira</li>
+            <li>Luan Figueiredo Lopes</li>
+            <li>Natan Melo De Oliveira</li>
+            
+        </ul>
+        
+    </div>
+
+
+    
+
+    
+    <!-- Inicio Modal -->
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Login</h4>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario de login -->                    
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>            
+            <button type="submit" class="btn btn-success">OK</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          </form>                    
+          <!--Fim Formulario de login -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cadastrar Modal -->
+  <div class="modal fade" id="cadastrarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Cadastre-se </h4>
+          <h6>Realize seu cadastro e aproveite nossas promoções</h6>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario de Cadastro -->
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Nome Completo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <label for="">Endereço</label>
+            <div class="row">                       
+              <div class="col-xs-3">
+                <input type="text" class="form-control" placeholder="CEP">
+              </div>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" placeholder="Logradouro">
+              </div>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" placeholder="Nº">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1"></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Complemento">
+            </div>
+            <div class="form-group">                        
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Bairro">
+            </div>
+            <div class="form-group">                        
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Cidade">
+            </div>
+            <div class="form-group">                        
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Estado">
+            </div>
+            <div class="form-group">                        
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ponto de referência">
+            </div>
+            <label for="">Cadastrar Password</label>
+            <div class="row">                       
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="Password">
+              </div>
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="Confirmar Password">
+              </div>                        
+            </div>
+            <div class="form-group">                  
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success">Cadastrar</button>
+                <button type="button" class="btn btn-danger data-dismiss="modal">Cancelar</button>                            
+              </div>
+            </div>
+          </form>
+          <!-- Fim Formulario de Cadastro -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal -->
+
+
+  <!-- Footer -->
+
+  <div class="footer">
+    
+    <div>
+      <img src="../../midia/img/logo.png" class="img-footer">
+    </div>
+    
+    <div >
+      <a class="sobre" href="./sobre-nos.html">Sobre</a>
+    </div>
+
+    <div class="contato">
+      <h4>Contatos</h4>
+      <a href="tel=+5521999728753">(21) 99972-8753</a>
+      <a href="mailto:hardtech.serratec@gmail.com">hardtech.serratec@gmail.com</a>
+    </div>
+
+  </div>
+
+
+
+  
+  
+</body>
+<script src="../js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</html>
