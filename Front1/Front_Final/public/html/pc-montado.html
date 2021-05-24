@@ -6,25 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCS montados</title>
-
-    <link rel="stylesheet" href="../css/style.css">
-
     <link rel="stylesheet" href="../css/style-pc-montado.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/bootstrap-4.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="shortcut icon" href="../../midia/img/logo.png" type="image/x-icon">
-
     <link rel="icon" href="../../midia/img/logo.png" type="image/x-icon">
 
 </head>
 
 <body>
-
+    <div class='wpp-floating'>
+        <a href='https://api.whatsapp.com/send?phone=5521999728753' target="_blank">
+            <img src='../../midia/img/wpp_button.png'>
+        </a>
+    </div>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,15 +31,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="../../midia/img/logo.png" alt=""></a>
-
+                <a class="navbar-brand" href="./home.html"><img src="../../midia/img/logo.png" alt=""></a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="/public/html/home.html"><span class="nav-logo">HardTech</span></a></li>
-
+                    <li><a href="./home.html"><span class="nav-logo">HardTech</span></a></li>
                 </ul>
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
@@ -55,25 +47,32 @@
                     <button type="button" class="btn btn-default" data-toggle="modal"
                         data-target="#cadastrarModal">Cadastre-se</button>
                 </form>
-
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
-    </div>
-
     <div id=produtos>
         <h2 class=lista>Lista de Produtos</h2>
+        <div class="container">
+            <div id="btn">
+                <div class="row justify-content-around">
+                    <div class="col-4">
+                        <a href="./pecas-pc.html"><button>Monte seu PC</button></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="./pc-montado.html"><button>PCs montados</button></a>
+                    </div>
+                    <!-- <div class="col-4">
+                        <a href="./carrinho.html"><button>btn3</button></a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
         <div class="row justify-content-around">
-
             <div class="col-sm-6  col-xs-12">
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img
                         src="https://images2.kabum.com.br/produtos/fotos/109242/computador-warrior-minisink-dt201-amd-ryzen-3-2200g-8gb-1tb-linux-dt201_1578929588_gg.jpg">
                     <hr>
@@ -141,16 +140,11 @@
                     </div>
                 </section>
             </div>
-
             <div class="col-sm-6  col-xs-12" >
-                
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img src="https://images3.kabum.com.br/produtos/fotos/156053/computador-gamer-concordia-intel-core-i5-9400f-8gb-1tb-hd-480gb-ssd-placa-de-video-rx-550-4gb-linux-40531_1619815443_gg.jpg">
                     <hr>
                     <h3>Computador Gamer Concórdia Intel Core i5-9400F</h3>
@@ -219,14 +213,11 @@
                     </div>
                 </section>
             </div>
-
             <div class="col-sm-6  col-xs-12">
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img src="https://images4.kabum.com.br/produtos/fotos/128284/computador-ntc-vulcano-ii-intel-pentium-g5400-8gb-240gb-intel-uhd-graphics-610-windows-10-pro-30-dias-7100_1600690552_gg.jpg">
                     <hr>
                     <h3>Computador NTC Vulcano II</h3>
@@ -304,18 +295,11 @@
                     </div>
                 </section>
             </div>
-        
-
-        
-
             <div class="col-sm-6  col-xs-12">
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
-
+                    </button>
                     <img
                         src="https://images6.kabum.com.br/produtos/fotos/137956/computador-gamer-g-fire-amd-a8-9600-8gb-ssd-240gb-linux-htg-r732_1611059532_gg.jpg">
                     <hr>
@@ -396,15 +380,12 @@
                         </div>
                     </div>
                 </section>
-
             </div>
             <div class="col-sm-6  col-xs-12">
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img
                         src="https://images7.kabum.com.br/produtos/fotos/153277/computador-gamer-g-fire-amd-a10-9700-8gb-120gb-ssd-radeon-r7-series-linux-htg-r733_1617126972_gg.jpg">
                     <hr>
@@ -486,15 +467,11 @@
                     </div>
                 </section>
             </div>
-
             <div class="col-sm-6  col-xs-12">
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img
                         src="https://images7.kabum.com.br/produtos/fotos/130887/computador-gamer-g-fire-ryzen-3-3200g-8gb-240gb-linux-htg-r728_1604669529_gg.jpg">
                     <hr>
@@ -575,17 +552,12 @@
                         </div>
                     </div>
                 </section>
-
             </div>
-
             <div class="col-sm-6  col-xs-12">
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img
                         src="https://images6.kabum.com.br/produtos/fotos/114686/computador-gamer-g-fire-amd-ryzen-5-3400g-8gb-ssd-120gb-radeon-rx-vega-11-2gb-linux-htg-r697_1593787149_gg.jpg">
                     <hr>
@@ -661,17 +633,12 @@
                         </div>
                     </div>
                 </section>
-
             </div>
-
             <div class="col-sm-6  col-xs-12">
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img
                         src="https://images6.kabum.com.br/produtos/fotos/137956/computador-gamer-g-fire-amd-a8-9600-8gb-ssd-240gb-linux-htg-r732_1611059532_gg.jpg">
                     <hr>
@@ -752,17 +719,12 @@
                         </div>
                     </div>
                 </section>
-
             </div>
-
             <div class="col-sm-6  col-xs-12">
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
-
+                    </button>
                     <img
                         src="https://images6.kabum.com.br/produtos/fotos/sync_mirakl/150796/Computador-Pc-Completo-Intel-i5-4-Gera-o-8gb-SSD-240GB-Wi-fi_1614276885_gg.jpg">
                     <hr>
@@ -837,16 +799,12 @@
                         </div>
                     </div>
                 </section>
-
             </div>
-
             <div class="col-sm-6  col-xs-12">
-
                 <section class="produto">
-
                     <button type="button" class="btn btn-light btn-xs" data-toggle="modal" data-target="#myModal">
                         Adicionar item ao carrinho
-                      </button>
+                    </button>
                     <img
                         src="https://images4.kabum.com.br/produtos/fotos/128284/computador-ntc-vulcano-ii-intel-pentium-g5400-8gb-240gb-intel-uhd-graphics-610-windows-10-pro-30-dias-7100_1600690552_gg.jpg">
                     <hr>
@@ -925,143 +883,139 @@
             </div>
         </div>
     </div>
- <!-- Inicio Modal -->
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Login</h4>
-        </div>
-        <div class="modal-body">
-          <!-- Formulario de login -->                    
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Endereço de Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <div class="footer"> 
+        <div>
+            <img src="../../midia/img/logo.png" class="img-footer">
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>            
-            <button type="submit" class="btn btn-success">OK</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-          </form>                    
-          <!--Fim Formulario de login -->
+            <div >
+            <a class="sobre" href="./sobre-nos.html">Sobre</a>
+            </div>
+            <div class="contato">
+            <h4>Contatos</h4>
+            <a href="tel:+5521999728753">(21) 99972-8753</a>
+            <a href="mailto:hardtech.serratec@gmail.com">hardtech.serratec@gmail.com</a>
         </div>
-      </div>
     </div>
-  </div>
-
-  <!-- Cadastrar Modal -->
-  <div class="modal fade" id="cadastrarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Cadastre-se </h4>
-          <h6>Realize seu cadastro e aproveite nossas promoções</h6>
+    <!-- Inicio Modal -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+            <!-- Formulario de login -->                    
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Endereço de Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>            
+                <button type="submit" class="btn btn-success">OK</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            </form>                    
+            <!--Fim Formulario de login -->
+            </div>
         </div>
-        <div class="modal-body">
-          <!-- Formulario de Cadastro -->
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Nome Completo</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Endereço de Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            </div>
-            <label for="">Endereço</label>
-            <div class="row">                       
-              <div class="col-xs-3">
-                <input type="text" class="form-control" placeholder="CEP">
-              </div>
-              <div class="col-xs-7">
-                <input type="text" class="form-control" placeholder="Logradouro">
-              </div>
-              <div class="col-xs-2">
-                <input type="text" class="form-control" placeholder="Nº">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1"></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Complemento">
-            </div>
-            <div class="form-group">                        
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Bairro">
-            </div>
-            <div class="form-group">                        
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Cidade">
-            </div>
-            <div class="form-group">                        
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Estado">
-            </div>
-            <div class="form-group">                        
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ponto de referência">
-            </div>
-            <label for="">Cadastrar Password</label>
-            <div class="row">                       
-              <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="Password">
-              </div>
-              <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="Confirmar Password">
-              </div>                        
-            </div>
-            <div class="form-group">                  
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success">Cadastrar</button>
-                <button type="button" class="btn btn-danger data-dismiss="modal">Cancelar</button>                            
-              </div>
-            </div>
-          </form>
-          <!-- Fim Formulario de Cadastro -->
         </div>
-      </div>
     </div>
-  </div>
-
-
-  <!-- Modal item adicionado ao carrinho -->  
-  
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Item adicionado ao carrinho</h4>
+    <!-- Cadastrar Modal -->
+    <div class="modal fade" id="cadastrarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Cadastre-se </h4>
+            <h6>Realize seu cadastro e aproveite nossas promoções</h6>
+            </div>
+            <div class="modal-body">
+            <!-- Formulario de Cadastro -->
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Nome Completo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Endereço de Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <label for="">Endereço</label>
+                <div class="row">                       
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" placeholder="CEP">
+                </div>
+                <div class="col-xs-7">
+                    <input type="text" class="form-control" placeholder="Logradouro">
+                </div>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control" placeholder="Nº">
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Complemento">
+                </div>
+                <div class="form-group">                        
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Bairro">
+                </div>
+                <div class="form-group">                        
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Cidade">
+                </div>
+                <div class="form-group">                        
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Estado">
+                </div>
+                <div class="form-group">                        
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ponto de referência">
+                </div>
+                <label for="">Cadastrar Password</label>
+                <div class="row">                       
+                <div class="col-xs-6">
+                    <input type="text" class="form-control" placeholder="Password">
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" class="form-control" placeholder="Confirmar Password">
+                </div>                        
+                </div>
+                <div class="form-group">                  
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Cadastrar</button>
+                    <button type="button" class="btn btn-danger data-dismiss="modal">Cancelar</button>                            
+                </div>
+                </div>
+            </form>
+            <!-- Fim Formulario de Cadastro -->
+            </div>
         </div>
-        <div class="modal-body">
-          Item adicionado ao carrinho com sucesso
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-          <button type="button" class="btn btn-primary">Cancelar</button>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-  
-
- 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-
+    <!-- Modal item adicionado ao carrinho -->  
     
+    <!-- Modal -->
+    <div4 class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Item adicionado ao carrinho</h4>
+            </div>
+            <div class="modal-body">
+            Item adicionado ao carrinho com sucesso
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            <button type="button" class="btn btn-primary">Cancelar</button>
+            </div>
+        </div>
+        </div>
+    </div4>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

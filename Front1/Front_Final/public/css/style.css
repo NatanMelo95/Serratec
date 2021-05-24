@@ -16,7 +16,16 @@ body{
     margin-right: auto;
     justify-content: center;
 } */
-
+.wpp-floating {
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+    z-index: 60;}
+    @media only screen and (max-width: 993px) {
+        .wpp-floating {
+        right: 2rem;
+        width: 10%;
+        bottom: 5rem;} }
 .navbar img{
     width: 50px;
     position: relative;
