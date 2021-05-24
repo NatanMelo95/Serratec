@@ -62,8 +62,8 @@ body{
     height: 300px;
 }
 .footer{
-    
     display: flex;
+    position:absolute;
     bottom: 0;
     color: #5e5573;
     flex-direction: row;

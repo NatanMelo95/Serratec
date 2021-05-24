@@ -102,8 +102,8 @@ span:hover + div{
 }
 
 .footer{
-    
     display: flex;
+    position:static;
     bottom: 0;
     color: #5e5573;
     flex-direction: row;
