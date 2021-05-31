@@ -33,9 +33,9 @@ public class JogadorController {
 	    Optional<Jogador> obterJogador = _repositoryJogador.obter(id);
 
 	    if (obterJogador.isPresent()) {
-	      return new ResponseEntity<>(obterJogador.get(), HttpStatus.OK);
+	     	return new ResponseEntity<>(obterJogador.get(), HttpStatus.OK);
 	    } else {
-	      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+	      	return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	    }
 	}
 	
