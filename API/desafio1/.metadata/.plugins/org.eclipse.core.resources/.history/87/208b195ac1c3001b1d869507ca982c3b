@@ -1,0 +1,6 @@
+package br.com.serratec.hotelserratec.model.exception.handle;
+
+@ContollerAdvice
+public class ApiHandleException {
+	
+}

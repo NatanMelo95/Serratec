@@ -1,0 +1,18 @@
+package br.com.serratec.hotelserratec.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.serratec.hotelserratec.model.Cliente;
+import br.com.serratec.hotelserratec.repository.ClienteRepository;
+
+@Service
+public class ClienteService {
+	@Autowired
+	private ClienteRepository _repositoryCliente;
+	public List<Cliente>obter(){
+		return this._repositoryCliente.findAll();
+	}
+}
